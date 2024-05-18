@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色介绍</title>
+    <link rel="stylesheet" href="../css/figure1.css">
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            const name = document.querySelector('.name');
+            const cv = document.querySelector('.cv');
+            const intro = document.querySelector('.intro');
+            const figure = document.querySelector('#figure');
+            const jean = document.getElementById('jean');
+            const klee = document.getElementById('klee');
+            const wendy = document.getElementById('wendy');
+            const diluc = document.getElementById('diluc');
+            const mona = document.getElementById('mona');
+            const albedo = document.getElementById('albedo');
+            jean.addEventListener('click', function () {
+                figure.src = "../images/figure/琴.png"
+                name.innerHTML = '琴';
+                cv.innerHTML = 'CV:林籁';
+                intro.innerHTML = '身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安宁。虽然琴并非天赋异禀，但通过刻苦训练，如今的她已然能够独当一面。当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准备，誓要守护蒙德。'
+            })
+            klee.addEventListener('click', function () {
+                figure.src = "../images/figure/可莉.png"
+                name.innerHTML = '可莉';
+                cv.innerHTML = 'CV:花玲';
+                intro.innerHTML = '西风骑士团火花骑士，永远伴随闪光与爆炸出现！———然后在琴团长严厉的目光注视下默默消失。西风骑士团禁闭室的常客，蒙德的爆破大师，人称“逃跑的太阳”。虽然新炸药的配方，很多都是在被关禁闭的时候想出来的……但如果不被关禁闭的话，就更好了。'
+            })
+            wendy.addEventListener('click', function () {
+                figure.src = "../images/figure/温迪.png"
+                name.innerHTML = '温迪';
+                cv.innerHTML = 'CV:喵*酱';
+                intro.innerHTML = '来路不明的吟游诗人，有时唱一些老掉牙的旧诗，有时会唱出谁也没听过的新歌。喜欢苹果和热闹的气氛，讨厌奶酪和一切黏糊糊的物质。在引导【风】的元素力时，元素的塑性往往外显为羽毛，因为他很中意看上去轻飘飘的东西。'
+            })
+            diluc.addEventListener('click', function () {
+                figure.src = "../images/figure/迪卢克.png"
+                name.innerHTML = '迪卢克';
+                cv.innerHTML = 'CV:马洋';
+                intro.innerHTML = '身为蒙德城第一富豪，风度翩翩的迪卢克总是以完美的贵公子形象示人。然而他真是的一面，是秉承坚定信念的战士，他那【不惜一切守护蒙德】的意志犹如火焰般炽热，令他能以恐怖的攻势，毫不留情地将一切敌人击溃。'
+            })
+            mona.addEventListener('click', function () {
+                figure.src = "../images/figure/莫娜.png"
+                name.innerHTML = '莫娜';
+                cv.innerHTML = 'CV:陈婷婷';
+                intro.innerHTML = '神秘的少女占星术士，声称自己是“伟大的占星术士莫娜”。拥有与名号相符的不俗实力，博学而高傲。尽管过着拮据、清贫的生活，但她坚决不用占卜来牟利，正是这种坚持，导致莫娜总是在为生计发愁。'
+            })
+            albedo.addEventListener('click', function () {
+                figure.src = "../images/figure/阿贝多.png"
+                name.innerHTML = '阿贝多';
+                cv.innerHTML = 'CV:Mace';
+                intro.innerHTML = '蒙德西风骑士团首席炼金术士兼调查小队队长，被称做“白垩之子”的天才，他不怎么在意称号和名望，只专注于研究课题。财富和人脉不是他的目标。他渴望驾驭的，是从古到今深藏于人类头脑中的无上知识。'
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="top">
+        <div class="left">
+            <ul>
+                <li><img src="../images/logo.png" class="image" width="400px" alt=""></li>
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="world.html">
+                    <li>世界</li>
+                </a>
+                <a href="figure1.html">
+                    <li>角色</li>
+                </a>
+                <a href="wallpaper.html">
+                    <li>壁纸</li>
+                </a>
+                <a href="news.html">
+                    <li>新闻资讯</li>
+                </a>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <a href="https://jiazhang.mihoyo.com/index.html#/">
+                    <li>成长关爱系统</li>
+                </a>
+                <li><img src="../images/爱心.png" alt=""></li>
+                <a href="login.html">
+                    <li>登录</li>
+                </a>
+                <li><img src="../images/登录.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--main-->
+    <div class="main">
+        <div class="headline"></div>
+        <div class="name">琴</div>
+        <div class="cv">CV:林籁</div>
+        <div id="icon1"><img src="../images/figure/icon1.jpeg" alt="" width="55px"></div>
+        <div id="mic"><img src="../images/figure/mic.png" alt="" id="mic"></div>
+        <div id="icon2"><img src="../images/figure/icon2.png" alt=""></div>
+        <div class="intro">身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安宁。
+            虽然并非天赋异凛，但通过刻苦训练，如今的她已然能够独当一面。
+            当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准备，誓要守护蒙德。</div>
+        <div class="figure"><img src="../images/figure/琴.png" alt="" id="figure"></div>
+        <div class="list">
+            <div class="icon-left"><img src="../images/figure/left.png" alt=""></div>
+            <div class="avatar" id="jean"><img src="../images/figure/小琴.png" alt="">
+                <p>琴</p>
+            </div>
+            <div class="avatar" id="klee"><img src="../images/figure/小可莉.png" alt="">
+                <p>可莉</p>
+            </div>
+            <div class="avatar" id="wendy"><img src="../images/figure/小温迪.png" alt="">
+                <p>温迪</p>
+            </div>
+            <div class="avatar" id="diluc"><img src="../images/figure/小迪卢克.png" alt="">
+                <p>迪卢克</p>
+            </div>
+            <div class="avatar" id="mona"><img src="../images/figure/小莫娜.png" alt="">
+                <p>莫娜</p>
+            </div>
+            <div class="avatar" id="albedo"><img src="../images/figure/小阿贝多.png" alt="">
+                <p>阿贝多</p>
+            </div>
+            <div class="icon-right"><img src="../images/figure/right.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- 地区导航栏 -->
+    <div class="city">
+        <ul>
+            <a href="figure1.html">
+                <li>蒙德城</li>
+            </a>
+            <a href="figure2.html">
+                <li>璃月港</li>
+            </a>
+            <a href="figure3.html">
+                <li>稻妻城</li>
+            </a>
+            <a href="figure4.html">
+                <li>须弥城</li>
+            </a>
+            <li>敬请期待</li>
+        </ul>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="sign">
+            <div class="sign1"><img src="../images/微博.png" alt=""></div>
+            <div class="sign1"><img src="../images/微信.png" alt=""></div>
+            <div class="sign1"><img src="../images/QQ.png" alt=""></div>
+            <div class="sign1"><img src="../images/分享.png" alt=""></div>
+        </div>
+        <div class="footer">
+            <div class="list">
+                <ul>
+                    <li>用户协议 |</li>
+                    <li>隐私政策 |</li>
+                    <li>儿童隐私政策 |</li>
+                    <li>自律公约 |</li>
+                    <li>成长关爱 |</li>
+                    <li>关于我们 |</li>
+                    <li>联系我们 |</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../images/mihoyo-logo.png" width="120px" alt="">
+                <img src="../images/原神图标.png" width="120px" class="image1" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。
+                    适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+                    沪公网安备31010402001113号|
+                    增值电信业务经营许可证：沪B2-20190555<br>
+                    沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+                    互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+                    亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+                    未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+                    © 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+                </p>
+            </div>
+            <div class="bottom">
+                <div><img src="../images/1.png" alt=""></div>
+                <div><img src="../images/2.png" alt=""></div>
+                <div><img src="../images/3.png" alt=""></div>
+                <div><img src="../images/4.png" alt=""></div>
+                <div><img src="../images/5.png" alt=""></div>
+                <div><img src="../images/6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

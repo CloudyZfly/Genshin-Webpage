@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    top: 200px;
+    background-image: url(../images/figure/banner1.png);
+}
+
+/*header*/
+.head {
+    position: relative;
+    top: -100px;
+    left: 700px;
+    width: 200px;
+    filter: brightness(1.3);
+}
+
+/*main*/
+.all {
+    position: relative;
+    top: -20px;
+    left: 520px;
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: deepskyblue;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 400px;
+    height: 5px;
+    background-color: deepskyblue;
+}
+
+form {
+    position: relative;
+    top: 120px;
+    text-align: center;
+}
+
+/*输入框样式*/
+input {
+    position: relative;
+    top: 20px;
+    left: 35px;
+    width: 65%;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid skyblue;
+}
+
+
+label {
+    position: relative;
+    top: 20px;
+    left: -350px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/*输入时提示向上移动*/
+input:focus+label {
+    top: -5px;
+}
+
+.next {
+    text-align: center;
+    display: block;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    height: 55px;
+    padding: 12px;
+    /*三个属性值分别是加粗，字体大小和字体样式*/
+    font: 900 25px '';
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    /*背景渐变色*/
+    background-image: linear-gradient(to left, skyblue, #df7cdf);
+}
+
+.back {
+    top: 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a {
+    position: relative;
+    top: 180px;
+    font-size: 20px;
+}
+
+/*footer*/
+#footer {
+    position: relative;
+    top: 150px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(161, 159, 159);
+    color: white;
+}
+
+.footer .list {
+    width: 60%;
+    text-align: center;
+    /*文本间距*/
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    left: 420px;
+    top: 10px;
+}
+
+.footer .list ul li {
+    display: inline;
+    margin-left: 14px;
+}
+
+.footer .list ul li:hover {
+    cursor: pointer;
+}
+
+.footer .logo {
+    width: 40%;
+    position: relative;
+    right: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+.image3 {
+    margin-bottom: -28px;
+    margin-left: 50px;
+}
+
+.sign {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-bottom: 2px solid lightgrey;
+}
+
+.sign1 img {
+    position: relative;
+    left: -35px;
+    width: 40px;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-left: 80px;
+    transition: all 0.5s;
+}
+
+.sign1 img:hover {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.content {
+    position: relative;
+    top: -40px;
+    left: 520px;
+    width: 52%;
+    font-size: 14px;
+
+}
+
+.bottom {
+    position: relative;
+    top: -10px;
+    left: 310px;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom div {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: white;
+}

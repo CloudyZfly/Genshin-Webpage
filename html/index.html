@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>官网首页</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <div class="top">
+        <div class="left">
+            <ul>
+                <li><img src="../images/logo.png" class="image" width="400px" alt=""></li>
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="world.html">
+                    <li>世界</li>
+                </a>
+                <a href="figure1.html">
+                    <li>角色</li>
+                </a>
+                <a href="wallpaper.html">
+                    <li>壁纸</li>
+                </a>
+                <a href="news.html">
+                    <li>新闻资讯</li>
+                </a>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <a href="https://jiazhang.mihoyo.com/index.html#/">
+                    <li>成长关爱系统</li>
+                </a>
+                <li><img src="../images/爱心.png" alt=""></li>
+                <a href="login.html">
+                    <li>登录</li>
+                </a>
+                <li><img src="../images/登录.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--main-->
+    <div>
+        <div class="image1">
+            <img src="../images/12+.png" width="100px" alt="">
+        </div>
+        <div class="image2">
+            <img src="../images/七圣召唤.png" alt="">
+        </div>
+        
+        <!-- 背景音乐 -->
+        <div class="play"></div>
+
+        <div>
+            <img src="../images/播放.png" class="image3" alt="">
+        </div>
+
+        <audio src="../video/bgmusic.mp3" class="music"></audio>
+
+        <!-- js部分 -->
+        <script>
+            //js的变量由 关键字 var 来定义
+            //获取文档上的audio标签
+            var music = document.querySelector(".music")
+            //获取文档上的button元素
+            var play = document.querySelector(".play")
+            var a = 1
+            //鼠标点击事件
+            play.onclick = function () {
+                a = a + 1;
+                if (a % 2 == 0) {
+                    //切换按钮上的背景图片
+                    play.style.backgroundImage = "url(../images/暂停.png)"
+                    //音乐播放
+                    music.play();
+                }
+                else {
+                    play.style.backgroundImage = "url(../images/开始.png)"
+                    //音乐暂停
+                    music.pause();
+                }
+            }
+        </script>
+
+        <h3 class="title">宣传视频</h3>
+        <p class="title">Promotional Video</p>
+        <p><!--muted:静音 loop:循环播放-->
+            <video class="video" src="../video/宣传.mp4" autoplay controls muted></video>
+        <div class="download">
+            <table cellspacing="0">
+                <tr>
+                    <td rowspan="2"><img src="../images/二维码.png" width="120" alt=""></td>
+                    <td><img src="../images/下载方式1.png" width="160" height="60" alt=""></td>
+                    <td><img src="../images/下载方式2.png" width="160" height="60" alt=""></td>
+                    <td rowspan="2"><img src="../images/下载方式5.png" width="130" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="../images/下载方式3.png" width="160" height="60" alt=""></td>
+                    <td><img src="../images/下载方式4.png" width="160" height="60" alt=""></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bgvideo">
+            <video src="../video/背景.mp4" style="width: 100%;" autoplay loop muted></video>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="sign">
+            <div class="sign1"><img src="../images/微博.png" alt=""></div>
+            <div class="sign1"><img src="../images/微信.png" alt=""></div>
+            <div class="sign1"><img src="../images/QQ.png" alt=""></div>
+            <div class="sign1"><img src="../images/分享.png" alt=""></div>
+        </div>
+        <div class="footer">
+            <div class="list">
+                <ul>
+                    <li>用户协议 |</li>
+                    <li>隐私政策 |</li>
+                    <li>儿童隐私政策 |</li>
+                    <li>自律公约 |</li>
+                    <li>成长关爱 |</li>
+                    <li>关于我们 |</li>
+                    <li>联系我们 |</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../images/mihoyo-logo.png" width="120px" alt="">
+                <img src="../images/原神图标.png" width="120px" class="image4" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。
+                    适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+                    沪公网安备31010402001113号|
+                    增值电信业务经营许可证：沪B2-20190555<br>
+                    沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+                    互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+                    亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+                    未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+                    © 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+                </p>
+            </div>
+            <div class="bottom">
+                <div><img src="../images/1.png" alt=""></div>
+                <div><img src="../images/2.png" alt=""></div>
+                <div><img src="../images/3.png" alt=""></div>
+                <div><img src="../images/4.png" alt=""></div>
+                <div><img src="../images/5.png" alt=""></div>
+                <div><img src="../images/6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

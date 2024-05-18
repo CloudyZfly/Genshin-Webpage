@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色介绍</title>
+    <link rel="stylesheet" href="../css/figure4.css">
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            const name = document.querySelector('.name');
+            const cv = document.querySelector('.cv');
+            const intro = document.querySelector('.intro');
+            const figure = document.querySelector('#figure');
+            const tighnari = document.getElementById('tighnari');
+            const cyno = document.getElementById('cyno');
+            const nilou = document.getElementById('nilou');
+            const nahida = document.getElementById('nahida');
+            const wanderer = document.getElementById('wanderer');
+            const alhaitham = document.getElementById('alhaitham');
+            tighnari.addEventListener('click', function () {
+                figure.src = "../images/figure/提纳里.png"
+                name.innerHTML = '提纳里';
+                cv.innerHTML = 'CV:莫然';
+                intro.innerHTML = '道成林的巡林官，毕业于阿弥利多学院的植物学学者。每天都过着巡查雨林、保护生态、教训笨蛋的充实生活。'
+            })
+            cyno.addEventListener('click', function () {
+                figure.src = "../images/figure/赛诺.png"
+                name.innerHTML = '赛诺';
+                cv.innerHTML = 'CV:李轻扬';
+                intro.innerHTML = '教令院的大风纪官，所有风纪官们的首领。拥有的独特幽默感令人印象深刻。'
+            })
+            nilou.addEventListener('click', function () {
+                figure.src = "../images/figure/妮露.png"
+                name.innerHTML = '妮露';
+                cv.innerHTML = 'CV:紫苏九月';
+                intro.innerHTML = '「祖拜尔剧场」的明星演员，舞姿娉婷，如睡莲初绽，一尘不染。但她绝非高傲清冷之人，即便只是匆匆的旅者，也会对她纯洁质朴的笑容过目不忘。'
+            })
+            nahida.addEventListener('click', function () {
+                figure.src = "../images/figure/纳西妲.png"
+                name.innerHTML = '纳西妲';
+                cv.innerHTML = 'CV:花玲';
+                intro.innerHTML = '「小吉祥草王」深居于净善宫内，向来不受重视，也很少被人提及。她身负重任，哪怕目睹漆黑，经历孤独，也不曾停下脚步。'
+            })
+            wanderer.addEventListener('click', function () {
+                figure.src = "../images/figure/散兵.png"
+                name.innerHTML = '流浪者';
+                cv.innerHTML = 'CV:鹿暗';
+                intro.innerHTML = '若有心者方为人，他不可称之为人。若无心者亦有悲喜苦乐，他便是最像人的人偶。'
+            })
+            alhaitham.addEventListener('click', function () {
+                figure.src = "../images/figure/艾尔海森.png"
+                name.innerHTML = '艾尔海森';
+                cv.innerHTML = 'CV:杨超然';
+                intro.innerHTML = '须弥教令院现任书记官，有过人的智慧与才能。生活得自由自在，一般人基本找不到他。'
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="top">
+        <div class="left">
+            <ul>
+                <li><img src="../images/logo.png" class="image" width="400px" alt=""></li>
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="world.html">
+                    <li>世界</li>
+                </a>
+                <a href="figure1.html">
+                    <li>角色</li>
+                </a>
+                <a href="wallpaper.html">
+                    <li>壁纸</li>
+                </a>
+                <a href="news.html">
+                    <li>新闻资讯</li>
+                </a>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <a href="https://jiazhang.mihoyo.com/index.html#/">
+                    <li>成长关爱系统</li>
+                </a>
+                <li><img src="../images/爱心.png" alt=""></li>
+                <a href="login.html">
+                    <li>登录</li>
+                </a>
+                <li><img src="../images/登录.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--main-->
+    <div class="main">
+        <div class="headline"></div>
+        <div class="name">提纳里</div>
+        <div class="cv">CV:莫然</div>
+        <div id="icon1"><img src="../images/figure/icon1.jpeg" alt="" width="55px"></div>
+        <div id="mic"><img src="../images/figure/mic.png" alt="" id="mic"></div>
+        <div id="icon2"><img src="../images/figure/icon2.png" alt=""></div>
+        <div class="intro">道成林的巡林官，毕业于阿弥利多学院的植物学学者。
+            每天都过着巡查雨林、保护生态、教训笨蛋的充实生活。</div>
+        <div class="figure"><img src="../images/figure/提纳里.png" alt="" id="figure"></div>
+        <div class="list">
+            <div class="icon-left"><img src="../images/figure/left.png" alt=""></div>
+            <div class="avatar" id="tighnari"><img src="../images/figure/小提纳里.png" alt="">
+                <p>提纳里</p>
+            </div>
+            <div class="avatar" id="cyno"><img src="../images/figure/小赛诺.png" alt="">
+                <p>赛诺</p>
+            </div>
+            <div class="avatar" id="nilou"><img src="../images/figure/小妮露.png" alt="">
+                <p>妮露</p>
+            </div>
+            <div class="avatar" id="nahida"><img src="../images/figure/小纳西妲.png" alt="">
+                <p>纳西妲</p>
+            </div>
+            <div class="avatar" id="wanderer"><img src="../images/figure/小散兵.png" alt="">
+                <p>流浪者</p>
+            </div>
+            <div class="avatar" id="alhaitham"><img src="../images/figure/小海森.png" alt="">
+                <p>艾尔海森</p>
+            </div>
+            <div class="icon-right"><img src="../images/figure/right.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- 地区导航栏 -->
+    <div class="city">
+        <ul>
+            <a href="figure1.html">
+                <li>蒙德城</li>
+            </a>
+            <a href="figure2.html">
+                <li>璃月港</li>
+            </a>
+            <a href="figure3.html">
+                <li>稻妻城</li>
+            </a>
+            <a href="figure4.html">
+                <li>须弥城</li>
+            </a>
+            <li>敬请期待</li>
+        </ul>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="sign">
+            <div class="sign1"><img src="../images/微博.png" alt=""></div>
+            <div class="sign1"><img src="../images/微信.png" alt=""></div>
+            <div class="sign1"><img src="../images/QQ.png" alt=""></div>
+            <div class="sign1"><img src="../images/分享.png" alt=""></div>
+        </div>
+        <div class="footer">
+            <div class="list">
+                <ul>
+                    <li>用户协议 |</li>
+                    <li>隐私政策 |</li>
+                    <li>儿童隐私政策 |</li>
+                    <li>自律公约 |</li>
+                    <li>成长关爱 |</li>
+                    <li>关于我们 |</li>
+                    <li>联系我们 |</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../images/mihoyo-logo.png" width="120px" alt="">
+                <img src="../images/原神图标.png" width="120px" class="image1" alt="">
+            </div>
+            <div class="content">
+                <p>
+                    健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。
+                    适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+                    沪公网安备31010402001113号|
+                    增值电信业务经营许可证：沪B2-20190555<br>
+                    沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+                    互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+                    亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+                    未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+                    © 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+                </p>
+            </div>
+            <div class="bottom">
+                <div><img src="../images/1.png" alt=""></div>
+                <div><img src="../images/2.png" alt=""></div>
+                <div><img src="../images/3.png" alt=""></div>
+                <div><img src="../images/4.png" alt=""></div>
+                <div><img src="../images/5.png" alt=""></div>
+                <div><img src="../images/6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

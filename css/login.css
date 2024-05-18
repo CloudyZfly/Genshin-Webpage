@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/figure/璃月港.jpg) no-repeat;
+}
+
+.bgvideo {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+/*header*/
+.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    z-index: 99;
+    background-color: #010101;
+    opacity: 0.8;
+}
+
+.left ul {
+    position: relative;
+    left: -150px;
+    top: -40px;
+}
+
+.left ul li {
+    /*横向排列*/
+    display: inline-block;
+    color: #fff;
+    margin-left: 25px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.left ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 6px solid skyblue;
+    z-index: 99;
+}
+
+.right {
+    width: 22%;
+    top: -75px;
+    float: right;
+    position: relative;
+}
+
+.right ul li {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.right ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 6px solid skyblue;
+    z-index: 99;
+}
+
+.image {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.image:hover {
+    filter: brightness(5);
+}
+
+.right img {
+    position: relative;
+    top: 6px;
+}
+
+.login-popup {
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.login-popup:hover {
+    color: black;
+    background: white;
+}
+
+/*main*/
+/*登录界面中间内容布局*/
+.main .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.main {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid #90959a;
+    border-radius: 20px;
+    /*毛玻璃背景效果*/
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /*弹性盒子布局*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*隐藏超出边框部分*/
+    overflow: hidden;
+    /*切换登陆界面的打开关闭*/
+    transform: scale(0);
+    transition: transform 0.5s ease, height 0.5s ease;
+}
+
+/*打开关闭登陆界面(main.active-popup)中间不能有空格*/
+.main.active-popup {
+    transform: scale(1);
+}
+
+/*切换登录和注册版块(main.active)*/
+.main.active {
+    height: 520px;
+}
+
+.main .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.main.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.main .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.main.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+/*关闭按钮*/
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: black;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+/*输入框样式*/
+.box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus+label,
+input:valid+label {
+    top: -5px;
+}
+
+/*图标样式*/
+.icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.remember {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember input {
+    /*主题色，控制勾选框为黑色背景*/
+    accent-color: black;
+    margin-right: 5px;
+}
+
+.remember a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+/*登录按钮样式*/
+.button {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+
+.register {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/*footer*/
+#footer {
+    position: absolute;
+    top: 1082px;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #999;
+}
+
+.footer .list {
+    width: 60%;
+    text-align: center;
+    /*文本间距*/
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    left: 420px;
+    top: 10px;
+}
+
+.footer .list ul li {
+    display: inline;
+    margin-left: 14px;
+}
+
+.footer .list ul li:hover {
+    cursor: pointer;
+}
+
+.footer .logo {
+    width: 40%;
+    position: relative;
+    right: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+.image1 {
+    margin-bottom: -28px;
+    margin-left: 50px;
+}
+
+.sign {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    border-bottom: 2px solid slategrey;
+}
+
+.sign1 img {
+    position: relative;
+    left: -35px;
+    width: 40px;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-left: 80px;
+    transition: all 0.5s;
+}
+
+.sign1 img:hover {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.content {
+    position: relative;
+    top: -40px;
+    left: 520px;
+    width: 52%;
+    font-size: 14px;
+
+}
+
+.bottom {
+    position: relative;
+    top: -10px;
+    left: 310px;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom div {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #000;
+}

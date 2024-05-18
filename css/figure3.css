@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+}
+
+/*header*/
+.top {
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    position: fixed;
+    z-index: 5;
+    background-color: #010101;
+    opacity: 0.8;
+}
+
+.left ul {
+    position: relative;
+    left: -150px;
+    top: -40px;
+}
+
+.left ul li {
+    /*横向排列*/
+    display: inline-block;
+    color: #fff;
+    margin-left: 25px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.left ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 6px solid skyblue;
+    z-index: 99;
+}
+
+.right {
+    width: 22%;
+    top: -75px;
+    float: right;
+    position: relative;
+}
+
+.right ul li {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.right ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 6px solid skyblue;
+    z-index: 99;
+}
+
+.image {
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+}
+
+.image:hover {
+    filter: brightness(5);
+}
+
+.right img {
+    position: relative;
+    top: 6px;
+}
+
+/*main*/
+.main {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 110vh;
+    background-image: url(../images/figure/角色稻妻城.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.headline {
+    display: block;
+    width: 180px;
+    height: 6px;
+    background: #e3bc8c;
+    position: relative;
+    left: 250px;
+    top: 120px;
+    z-index: 1;
+}
+
+.name {
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    position: relative;
+    left: 250px;
+    top: 140px;
+    z-index: 1;
+}
+
+/*CV框样式*/
+.cv {
+    position: relative;
+    left: 300px;
+    top: 140px;
+    width: 330px;
+    height: 55px;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    text-align: center;
+    line-height: 55px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: #cca574;
+    background-size: 55px;
+    background-position: left top;
+    box-shadow: 2px 3px 6px rgb(12 12 12 / 20%);
+    z-index: 1;
+}
+
+#mic {
+    position: relative;
+    width: 70px;
+    left: 310px;
+    top: 9px;
+    z-index: 1;
+}
+
+#icon1 {
+    position: relative;
+    width: 50px;
+    left: 250px;
+    top: 85px;
+    z-index: 1;
+}
+
+#icon2 {
+    position: relative;
+    width: 40px;
+    left: 265px;
+    top: 50px;
+    z-index: 2;
+}
+
+.intro {
+    width: 550px;
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 25px;
+    position: relative;
+    left: 250px;
+    top: 10px;
+    opacity: 0.8;
+    padding: 20px 25px 25px 50px;
+    background-color: #24333c;
+    z-index: 1;
+}
+
+/*角色背景图*/
+.figure {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    left: 254px;
+    top: -445px;
+    scale: 1.2;
+}
+
+.figure img {
+    width: 1250px;
+}
+
+/*角色选栏*/
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -240px;
+    padding: 25px;
+    opacity: 0.9;
+    z-index: 9;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.list .avatar img {
+    width: 110px;
+}
+
+.list .avatar {
+    width: 150px;
+    padding: 2px;
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    border: 5px solid transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.list .avatar:hover {
+    border: 5px solid white;
+}
+
+.list p {
+    width: 135px;
+    height: 35px;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    background-color: black;
+    position: relative;
+    left: 1px;
+}
+
+/*左右箭头*/
+.icon-left img {
+    margin-right: 20px;
+    margin-top: 50px;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+.icon-right img {
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+.icon-left img:hover,
+.icon-right img:hover {
+    opacity: 1;
+}
+
+/*地区导航栏*/
+.city {
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    letter-spacing: 2px;
+}
+
+.city ul li {
+    margin-top: 60px;
+    transition: all 0.5s;
+}
+
+.city ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*footer*/
+#footer {
+    position: absolute;
+    bottom: -43%;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #999;
+}
+
+.footer .list {
+    width: 60%;
+    text-align: center;
+    /*文本间距*/
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    left: 420px;
+    top: 10px;
+}
+
+.footer .list ul li {
+    display: inline;
+    margin-left: 14px;
+}
+
+.footer .list ul li:hover {
+    cursor: pointer;
+}
+
+.footer .logo {
+    width: 40%;
+    position: relative;
+    right: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+.image1 {
+    margin-bottom: -28px;
+    margin-left: 50px;
+}
+
+.sign {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    border-bottom: 2px solid slategrey;
+}
+
+.sign1 img {
+    position: relative;
+    left: -35px;
+    width: 40px;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-left: 80px;
+    transition: all 0.5s;
+}
+
+.sign1 img:hover {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.content {
+    position: relative;
+    top: -40px;
+    left: 520px;
+    width: 52%;
+    font-size: 14px;
+
+}
+
+.bottom {
+    position: relative;
+    top: -10px;
+    left: 310px;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom div {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #000;
+}

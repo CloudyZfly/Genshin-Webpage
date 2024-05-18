@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    position: fixed;
+    /*两边对齐*/
+    text-align: justify;
+    border-bottom: 2px solid #1a1a1a;
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+    background-color: #010101;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+.left ul {
+    position: relative;
+    left: -150px;
+    top: -40px;
+}
+
+.left ul li {
+    /*横向排列*/
+    display: inline-block;
+    color: #fff;
+    margin-left: 25px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.left ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 8px solid skyblue;
+    z-index: 99;
+}
+
+.right {
+    top: -75px;
+    width: 22%;
+    float: right;
+    position: relative;
+}
+
+.right ul li {
+    display: inline-block;
+    color: #fff;
+    margin-left: 15px;
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.right ul a li:hover {
+    content: '';
+    position: relative;
+    top: 5px;
+    border-top: 8px solid skyblue;
+    z-index: 99;
+}
+
+.image {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.image:hover {
+    filter: brightness(5);
+}
+
+.right img {
+    position: relative;
+    top: 10px;
+}
+
+/*main*/
+.news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.news h3 {
+    left: 5px;
+    top: 150px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: lighter;
+    position: relative;
+}
+
+/*资讯框样式*/
+.main {
+    top: 300px;
+    left: 800px;
+    width: 700px;
+    height: 420px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title ul {
+    margin-top: 30px;
+}
+
+.title ul li {
+    /*悬停时的鼠标指针样式*/
+    cursor: pointer;
+    display: inline;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.title .ul1 li:hover::before {
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: #ffd49f;
+    position: absolute;
+    top: 60px;
+}
+
+.li1:hover::before {
+    left: 15px;
+}
+
+.li2:hover::before {
+    left: 95px;
+}
+
+.li3:hover::before {
+    left: 175px;
+}
+
+.li4:hover::before {
+    left: 255px;
+}
+
+.content ul li {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px 0px 10px 0;
+    box-shadow: 0 2px #6a4e3c;
+    /*过渡时间*/
+    transition: all 0.5s;
+}
+
+.content ul li span {
+    float: right;
+    color: #999;
+    font-size: smaller;
+}
+
+.content ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.all {
+    top: 30px;
+    width: 120px;
+    position: relative;
+    left: 550px;
+    color: #fff;
+    font-size: larger;
+}
+
+.all a {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/*footer*/
+#footer {
+    position: relative;
+    top: 225px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #999;
+}
+
+.footer .list {
+    width: 60%;
+    text-align: center;
+    /*文本间距*/
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    left: 420px;
+    top: 10px;
+}
+
+.footer .list ul li {
+    display: inline;
+    margin-left: 14px;
+}
+
+.footer .list ul li:hover {
+    cursor: pointer;
+}
+
+.footer .logo {
+    width: 40%;
+    position: relative;
+    right: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+.image1 {
+    margin-bottom: -28px;
+    margin-left: 50px;
+}
+
+.sign {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    border-bottom: 2px solid slategrey;
+}
+
+.sign1 img {
+    position: relative;
+    left: -35px;
+    width: 40px;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-left: 80px;
+    transition: all 0.5s;
+}
+
+.sign1 img:hover {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.content1 {
+    position: relative;
+    top: -40px;
+    left: 520px;
+    width: 52%;
+    font-size: 14px;
+
+}
+
+.bottom {
+    position: relative;
+    top: -10px;
+    left: 310px;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom div {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #000;
+}
